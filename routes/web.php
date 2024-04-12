@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return 'Main Page';
+    return view('index',[
+        //'name' => 'Zeljko'
+    ]);
 });
 
 Route::get('/zeka', function () {
@@ -25,3 +27,5 @@ Route::get('/zeka', function () {
 Route::get('/greet/{name}', function($name) {
     return 'Helo' . $name . '!';
 });
+
+
