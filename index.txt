@@ -3,3 +3,10 @@ Direktiv isset nam vrsi provjeru odredjene varijable,da li je definisana
   @isset($name)
     <h1>This is name: {{ $name }}</h1>
   @endisset 
+
+//Dodavanje dinamickih djelova na samom url-u
+  Route::get('/greet/{name}', function($name) {
+    return 'Helo' . $name . '!';
+  });
+
+csfr tokeni
