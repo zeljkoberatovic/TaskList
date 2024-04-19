@@ -46,12 +46,14 @@ Route::post('/tasks', function (Request $request) {
     'long_description' => 'required'
   ]);
 
-  $task = new Task;
-  $task->title = $data['title'];
-  $task->description = $data['description'];
-  $task->long_description = $data['long_description'];
-  $task->save();
-  return redirect()->route('tasks.show', ['id' => $task->id]);
+    $task = new Task;
+    $task->title = $data['title'];
+    $task->description = $data['description'];
+    $task->long_description = $data['long_description'];
+    $task->save();
+
+  return redirect()->route('tasks.show', ['id' => $task->id])
+        ->with('success', 'Task created Successfully!'); //dodavanje flash poruke
 })->name('tasks.store');
 
 
