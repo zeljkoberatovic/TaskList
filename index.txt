@@ -10,3 +10,4 @@ Direktiv isset nam vrsi provjeru odredjene varijable,da li je definisana
   });
 
 csfr tokeni
+dodavanje helpera
