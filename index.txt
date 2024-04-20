@@ -10,4 +10,8 @@ Direktiv isset nam vrsi provjeru odredjene varijable,da li je definisana
   });
 
 csfr tokeni
-dodavanje helpera
+dodavanje helpers-a
+ako imamo potpuno isti skup pravila,mozemo ekstraktovati u takozvani obrazac zahtjeva-php artisan make:request TastRequest
+
+Modeli imaju zastitu od tzv masovne dodjeleNe mozemo mijenjati vise atributa odjednom,prema zadatim postavkama to je onemoguceno.
+Da bi smo to omogucili moramo u modelu redefinirati zasticeno polje pod nazivom Fillable.

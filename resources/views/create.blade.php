@@ -1,15 +1,14 @@
 @extends('layouts.app')
-
 @section('title', 'Add Task')
 
-@section('styles')
-    <style>
-        .error-message {
-            color:red;
-            font-size: 0.8rem;
-        }
-    </style>
-@endsection
+    @section('styles')
+        <style>
+            .error-message {
+                color:red;
+                font-size: 0.8rem;
+            }
+        </style>
+    @endsection
 
 @section('content')
 <form method="POST" action="{{ route('tasks.store') }}">
