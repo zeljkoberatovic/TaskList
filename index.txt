@@ -15,3 +15,5 @@ ako imamo potpuno isti skup pravila,mozemo ekstraktovati u takozvani obrazac zah
 
 Modeli imaju zastitu od tzv masovne dodjeleNe mozemo mijenjati vise atributa odjednom,prema zadatim postavkama to je onemoguceno.
 Da bi smo to omogucili moramo u modelu redefinirati zasticeno polje pod nazivom Fillable.
+
+includingSubviews
