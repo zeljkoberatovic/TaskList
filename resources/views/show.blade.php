@@ -13,4 +13,11 @@
     @if ($task->updated_at && $task->created_at != $task->updated_at)
         <p>update {{ $task->updated_at }}</p>
     @endif
+
+    <div>
+        <form action="{{ route('tasks.destroy', ['task' => $task->id]) }}" method="POST">
+            @csrf
+            @method('DELETE')
+            <button type="submit">Delete</button>
+    </div>
 @endsection
