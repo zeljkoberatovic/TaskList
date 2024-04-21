@@ -17,3 +17,5 @@ Modeli imaju zastitu od tzv masovne dodjeleNe mozemo mijenjati vise atributa odj
 Da bi smo to omogucili moramo u modelu redefinirati zasticeno polje pod nazivom Fillable.
 
 includingSubviews
+
+cdn.tailwindcss --
