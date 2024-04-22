@@ -20,3 +20,6 @@ includingSubviews
 
 cdn.tailwindcss --
 direktiva klase-- @class(['border-red-500' => $errors->has('description')])
+
+Alpine.js
+Tailwindcss.com

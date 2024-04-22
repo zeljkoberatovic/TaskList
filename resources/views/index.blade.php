@@ -8,12 +8,12 @@
         class="link">Add Task!</a>
 </nav>
 
-  @forelse ($tasks as $task)
+    @forelse ($tasks as $task)
         <div>
             <a href="{{ route('tasks.show', ['task' => $task->id])}}"
                 @class(['line-through' => $task->completed])>{{ $task->title }}</a>
         </div>
-    @empty
+      @empty
             <div>There are not task!</div>
     @endforelse
      
