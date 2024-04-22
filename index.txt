@@ -19,3 +19,4 @@ Da bi smo to omogucili moramo u modelu redefinirati zasticeno polje pod nazivom 
 includingSubviews
 
 cdn.tailwindcss --
+direktiva klase-- @class(['border-red-500' => $errors->has('description')])
